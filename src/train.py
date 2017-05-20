@@ -95,6 +95,7 @@ def train(pdtg, batch_size, nb_epoch):
         print "\n\n\n"
         index = index + 1
         # Updates plots
+        pdtg.model.save_weights("weight.hdf5")
         if e%25==24:
             plot_loss(losses)
 

@@ -129,7 +129,7 @@ class PDTG:
         self.model = Model([gan_input, perception_input], [g_V, p_V])
         self.g_p_model.summary()
         self.g_d_model.summary()
-        plot(self.model, to_file="pdtg.png", show_shapes=True, show_layer_names=True)
+        # plot(self.model, to_file="pdtg.png", show_shapes=True, show_layer_names=True)
         self.is_model_created = True
 
     def compile_model(self):
